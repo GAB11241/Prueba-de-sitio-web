@@ -5,3 +5,14 @@ h1 {
 p{
   strong;
 }
+
+body{
+ 
+  background-color: slategray;
+  color:chocolate
+}
+
+img{
+  border-radius:50%;
+  border-style: solid;
+}
