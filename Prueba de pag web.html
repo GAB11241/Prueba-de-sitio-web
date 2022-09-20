@@ -3,47 +3,141 @@
 <!--Ni idea-->
 <!--ola-->
 
-<html lang="es" >
+<html lang="es">
    <head>
-    <title>Pagina de prueba</title>
-    <!--coneccion con Css-->
-    
- 
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" 
+      <title>Portfolio</title>
+
+  <!--coneccion con archivo Css,boostrap y fontawesome-->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1f67efcbbb.js" crossorigin="anonymous"></script>
 
   </head>
+<body>
+<!--barra con logo de argentina programa-->
+<nav class="navbar navbar-expand-lg bg-barra">
+  <div class="container-md">
+    <a class="navbar-brand" href="#"><img src="Imagenes/APLogo-20-20.png" alt="Argentina Programa" class="w-25"></a>
+<!--iconos de redes-->
+    <ul class="list-group list-group-horizontal">
+      <li id="icono"  class="list-group-item"> <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl text-white"></i></a></li>
+      <li id="icono" class="list-group-item"><a href="https://github.com/"><i class="fa-brands fa-github fa-2xl text-white"></i></a></li>
+      <!--boton de login-->
+      <li id="icono" class="list-group-item">
+      <i  data-bs-toggle="modal" data-bs-target="#login" class="fa-solid fa-user fa-2xl text-white" ></i>
+    </li>
+    </ul>
+  </div>
+</nav>
+<!--banner-->
+<section class="banner P-inicio">
+<h3 class="text-white text-center intro">
 
-<body text="black">
-
-  
-<div class="container">
-
-  <p><font size="7"><i>Ejemplo</i> <strong>de</strong> parrafo</font></p>
-
-</div> 
-
-
-    <h1>heading 1</h1>
-    <h2>heading 2</h2>
-    <h5>heading 5</h5>
-
-
- <p>Tamaño de fuente</p>
-    <font size="1">Ejemplo tamaño 1</font><br />
-    <font size="3">Ejemplo de tamaño 3</font><br />
+¡Hola! mi nombre es
+</h3>
+<h1 class="text-white text-center intro">
+ Lopez Urzaiz Gabriel
+</h1>
+<h2 class="text-white text-center intro">
+Desarrollador web
+</h2>
+</section>
+<!-- Ventana de login -->
+<div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ventanaEstatica" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title" id="ventanaEstatica">Que onda pa</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <!--Formulario del login-->
+    <form>
+      <div class="mb-3">
+        <label for="correoElectronico" class="form-label">Correo electronico</label>
+        <input type="Correo" class="form-control" id="correoElectronico">
+      </div>
+      <div class="mb-3">
+        <label for="contraseña" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="contraseña">
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+    <button type="submit" class="btn btn-primary">Siguiente</button>
+  </div>
+</div>
+</div>
+</div>
+ <!--Acerca de mi-->
+<section class="caja1 ">
  
-<img src="https://th.bing.com/th/id/R.e964d3af24171a9bca48d8c6cdf6db75?rik=j3Lks8QdoyrKlA&pid=ImgRaw&r=0  " alt "pinguino" width="350" height="250">
+    <div  class="row">
+      <div class="col-3">
+        <img id="perroCejas"src="Imagenes/perro.jpeg" alt="perro con cejas" width="200" height="200">
+          </div>
+            <div class="col-9 mt-4 "> 
+              <h4 class="mt-4 pt-4"> Acerca de mi </br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti corporis deserunt error, aperiam velit veritatis ipsum possimus. Eveniet molestias magnam non est oditsit vel similique natus consequuntur ducimus
+             </h4>
+        </div>
+     </div>
+  </div>
+</section>
+</br>
 
-<form action="Respuesta">
-  <input type="text" placeholder="te gustan los pinguinos ._.?" required><br/>
-  <button type="summit">Enviar</button>
-  </form>
+
+<section class="caja2">
+     
+      <h3>Habilidades</h3>
+      <div> 
+          <p>Lorem ipsum dolor sit amet consectetur Temporibus, dolores?idades</p>
+          </div>
+              <div> 
+                <progress  max="100" value="25" class="barraProg1" ></progress>
+          </div>
+          <div> 
+            <p>Lorem ipsum dolor sit amet consectetur Temporibus, dolores?idades</p>
+            </div>
+                <div> 
+                  <progress  max="100" value="25" class="barraProg1" ></progress>
+            </div>
+            <div> 
+              <p>Lorem ipsum dolor sit amet consectetur Temporibus, dolores?idades</p>
+              </div>
+                  <div> 
+                    <progress  max="100" value="25" class="barraProg1" ></progress>
+              </div>
+              <div> 
+                <p>Lorem ipsum dolor sit amet consectetur Temporibus, dolores?idades</p>
+                </div>
+                    <div> 
+                      <progress  max="100" value="25" class="barraProg1" ></progress>
+                </div>
+                <div> 
+                  <p>Lorem ipsum dolor sit amet consectetur Temporibus, dolores?idades</p>
+                  </div>
+                      <div> 
+                        <progress  max="100" value="25" class="barraProg1" ></progress>
+                  </div>
+     
+   
+
+     
+
+</section>
+
+
+<footer>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis 
+</footer>
 
 
 
-<!--coneccion con Js-->>
+<!--coneccion con Js-->
 
   <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 
 </html>
